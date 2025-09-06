@@ -11,6 +11,10 @@
           <string>IN</string>
         </entry>
         <entry>
+          <string>Bits</string>
+          <int>10</int>
+        </entry>
+        <entry>
           <string>intFormat</string>
           <intFormat>bin</intFormat>
         </entry>
@@ -23,6 +27,10 @@
         <entry>
           <string>Label</string>
           <string>OUT0</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>3</int>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -39,11 +47,15 @@
           <string>OUT1</string>
         </entry>
         <entry>
+          <string>Bits</string>
+          <int>3</int>
+        </entry>
+        <entry>
           <string>intFormat</string>
           <intFormat>bin</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="600" y="280"/>
+      <pos x="640" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -79,7 +91,50 @@
       </elementAttributes>
       <pos x="460" y="40"/>
     </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>10</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-2,5-7,8-8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="240"/>
+    </visualElement>
   </visualElements>
-  <wires/>
+  <wires>
+    <wire>
+      <p1 x="500" y="240"/>
+      <p2 x="600" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="260"/>
+      <p2 x="640" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="200"/>
+      <p2 x="480" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="280"/>
+      <p2 x="600" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="200"/>
+      <p2 x="480" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="200"/>
+      <p2 x="600" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="280"/>
+      <p2 x="600" y="360"/>
+    </wire>
+  </wires>
   <measurementOrdering/>
 </circuit>
