@@ -1,0 +1,10 @@
+Instruction,RegWrite,ALUSrc,ImmSrc1,ImmSrc0,ALUOp3,ALUOp2,ALUOp1,ALUOp0,DataValueForROM
+add,0b1,0b0,0b0,0b0,0b0,0b0,0b1,0b0,0b10000010
+sub,,,,,,,,,
+and,,,,,,,,,
+or,,,,,,,,,
+slt,,,,,,,,,
+addi,,,,,,,,,
+slti,,,,,,,,,
+andi,,,,,,,,,
+
